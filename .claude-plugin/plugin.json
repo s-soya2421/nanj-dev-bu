@@ -1,0 +1,8 @@
+{
+  "name": "nanj-dev-bu",
+  "description": "掲示板文化にインスパイアされた設計検討skill。掲示板風スレッドで議論し、結論を ADR / Spec に昇格させる",
+  "version": "0.1.0",
+  "author": {
+    "name": "nanj-dev-bu"
+  }
+}
