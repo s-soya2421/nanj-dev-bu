@@ -31,10 +31,11 @@ claude skill add /path/to/skills/nanj-dev-bu
 
 ### Plugin Marketplace
 
-マーケットプレイスリポジトリの `marketplace.json` に登録されている場合：
+Claude Code の Plugin Marketplace 経由で使う場合:
 
 ```bash
-claude plugin install nanj-dev-bu
+claude plugin marketplace add s-soya2421/nanj-dev-bu
+claude plugin install nanj-dev-bu@nanj-dev-bu-plugins
 ```
 
 > Plugin 経由でインストールした場合、スキル呼び出しは `/nanj-dev-bu:<skill>` の形式になる。

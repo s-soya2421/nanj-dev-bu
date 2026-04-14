@@ -6,13 +6,28 @@
 
 ## インストール
 
-配布時の推奨導線（Skills CLI）:
+### Skills CLI（推奨）
+
+配布時の推奨導線:
 
 ```bash
 npx skills add s-soya2421/nanj-dev-bu
 ```
 
-ローカル開発で直接読み込む場合:
+### Plugin Marketplace
+
+Claude Code の Plugin Marketplace 経由で使う場合:
+
+```bash
+claude plugin marketplace add s-soya2421/nanj-dev-bu
+claude plugin install nanj-dev-bu@nanj-dev-bu-plugins
+```
+
+Plugin 経由でインストールした場合、スキル呼び出しは `/nanj-dev-bu:<skill>` の形式になる。
+
+### ローカル開発
+
+直接読み込む場合:
 
 ```bash
 claude skill add /path/to/skills/nanj-dev-bu
@@ -92,6 +107,7 @@ ADR を受けて仕様の正本を作成・更新する。
 
 ```
 /
+├── .claude-plugin/        # Claude Code Plugin / Marketplace メタデータ
 ├── skills/nanj-dev-bu/   # skill 本体（配布対象）
 ├── example/               # 使用例（スレッド → ADR → Spec の一連の流れ）
 ├── history/threads/       # 設計検討スレッドログ（リポジトリ固有）

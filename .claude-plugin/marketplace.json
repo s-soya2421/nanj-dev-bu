@@ -1,0 +1,32 @@
+{
+  "name": "nanj-dev-bu-plugins",
+  "owner": {
+    "name": "s-soya2421"
+  },
+  "metadata": {
+    "description": "Claude Code skills and plugins for design discussion workflows.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "nanj-dev-bu",
+      "source": {
+        "source": "github",
+        "repo": "s-soya2421/nanj-dev-bu"
+      },
+      "description": "掲示板風スレッドで設計を議論し、結論を ADR / Spec に昇格させる Claude Code skill。",
+      "author": {
+        "name": "nanj-dev-bu"
+      },
+      "category": "productivity",
+      "tags": [
+        "design-review",
+        "adr",
+        "specification",
+        "japanese"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/s-soya2421/nanj-dev-bu"
+    }
+  ]
+}
